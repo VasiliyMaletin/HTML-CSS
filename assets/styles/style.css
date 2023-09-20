@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../font/Gilroy-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../font/Gilroy-Semibold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../font/Gilroy-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    font-family: Gilroy;
+}
+.header {
+    width: 1170px;
+    height: 114px;
+    margin-top: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo {
+    width: 35px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;    
+}
+.header-logo-text {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-line {
+    width: 533px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.header-menu {
+    color: #000;
+    display: flex;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;    
+}
+.header-icon {
+    width: 6px;
+    height: 3px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro {
+    width: 1170px; 
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 39px;
+}
+.intro-title {
+    width: 522px;
+    height: 222px;
+    color: #000;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: normal;
+}
+.intro-description {
+    width: 466px;
+    height: 48px;
+    color: #888;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 17px;
+}
+.intro-button-wrapper {
+    width: 374px;
+    height: 94px;
+    margin-top: 37px;
+}
+.intro-button {
+    width: 140px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    border: none;
+    background: #F25822;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: normal;
+    margin-right: 72px;
+}
+.intro-image {
+    width: 610.735px;
+    height: 372.904px;
+    flex-shrink: 0;
+}
+.cards {
+    margin-top: 259px;
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.advantages {
+    margin-top: 250px;
+    width: 1170px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+.advantages-box {
+    width: 381px;
+    height: 291px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 30px;
+}
+.advantages-icon {
+    width: 70px;
+    height: 70px;
+}
+.advantages-title {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: normal;
+}
+.advantages-description {
+    width: 310px;
+    height: 42px;
+    flex-shrink: 0;
+    color: #666;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 150%; /* 22.5px */
+}
+.advantages-more {
+    color: #000;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 150%; /* 16.5px */
+    text-decoration: none;
+}
