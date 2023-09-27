@@ -1,14 +1,36 @@
+@font-face{
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-SemiBold.ttf");
+    font-style: normal; 
+    font-weight: 600; 
+}
+@font-face{
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Bold.ttf");
+    font-style: normal; 
+    font-weight: 700; 
+}
+@font-face{
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-ExtraBold.ttf");
+    font-style: normal; 
+    font-weight: 800; 
+}
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     background-color: #020A18;
+}
+h1 { 
+    margin: 0;
 }
 .header {
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    column-gap: 40px;
+    background-color: #020b1b;
 }
 .header-line {
     text-decoration: none;
@@ -23,7 +45,7 @@ body {
     gap: 128px;
 }
 .center {
-    width: 1146px;
+    max-width: 1146px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -43,7 +65,7 @@ body {
 }
 .intro-description {
     color: #FFF;
-    width: 558px;
+    max-width: 558px;
     font-size: 18px;
     font-weight: 600;
     line-height: 160%; /* 28.8px */
@@ -51,6 +73,9 @@ body {
     margin-top: 40px;
 }
 .intro-button-wrapper {
+    width: 408px;
+    height: 57px;
+    flex-shrink: 0;
     margin-top: 50px;
     display: flex;
     gap: 20px;
@@ -58,23 +83,22 @@ body {
 .intro-button {
     padding: 15px 30px;
     border-radius: 5px;
-    background: #3A68B8;
+    background-color: #3A68B8;
     color: #FFF;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: normal;
     cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
 }
 .intro-icon-button {
     width: 27px;
     height: 26px;
-    color: #FFF;
-    background: #3A68B8;
+    margin-right: 10px;
 }
 .cards {
-    width: 1146px;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     justify-content: space-between;
     margin-top: 197px;
@@ -82,83 +106,29 @@ body {
 .text-image {
     margin-top: 256px;
     display: flex;
+    justify-content: center;
+    gap: 68px;
 }
 .text-box {
-align-self: center;
-color: white;
+    align-self: center;
+    color: white;
 }
 .text-title {
-width: 548px;
-font-size: 40px;
-font-weight: 700;
-line-height: 130%;
-}
-.text-box-description {
-gap: 20px;
-margin-top: 40px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 130%;
 }
 .text-description {
-width: 460px;
-font-size: 16px;
-font-weight: 600;
-line-height: 160%; /* 25.6px */
-opacity: 0.7;
-margin-top: 30px;
+    max-width: 460px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 160%; /* 25.6px */
+    opacity: 0.7;
+    margin-top: 30px;
 }
 .text-button {
-margin-top: 50px;
-}
-/* .container {
-    display: flex;
     margin-top: 50px;
-    color: white;
-    height: 90vh;
 }
-.item {
-    padding: 30px;
-    border: 2px solid green;
-}
-.item2 {
-    align-self: center;
-    order: 2;
-} */
-/* 
-    flex: flex-grow flex-shrink flex-basis
-    flex: 1 0 200px;
-    flex: 1;
-    flex: 1 2;
-*/
-/* .container2 {
-    display: grid; */
-    /* grid-template-columns: 200px 250px 300px;
-    grid-template-rows: 200px 200px 200px; */
-    /* grid-template-columns: repeat(3, 200px); */
-    /* grid-template-rows: 300px; */
-    /* grid-auto-rows: minmax(300px, auto); */
-    /* margin-top: 50px;
-    column-gap: 20px;
-    row-gap: 20px; */
-    /* gap: 25px;
-    grid-gap: 25px;
-    color: white;
-    height: 90vh;
-}
-.item3 {
-    justify-self: center;
-    align-self: center;
-}
-.item4 { */
-    /* grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4; */
-    /* grid-column: 1/3;
-    grid-row: 2/4; */
-    /* grid-column: 1 / span 2;
-    grid-row: 2 / span 2; */
-    /* grid-column: span 2;
-    grid-row: span 2;
-} */
 .services {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -202,23 +172,43 @@ margin-top: 50px;
     grid-row: span 2;
     gap: 60px;
 }
+.text-image2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 243px;
+}
+.text-image2__box {
+    align-self: center;
+    color: white;
+    max-width: 548px;
+}
+.box__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+.box__description {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 160%; /* 25.6px */
+    opacity: 0.7;
+    margin-top: 20px;
+    max-width: 460px;
+}
 .footer {
-    font-family: 'Roboto', sans-serif;
-    margin-top: 269px;
+    margin-top: 221px;
+    background-color: #020b1b;
+    border-radius: 10px;
+}
+.footer__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
     color: white;
+    padding: 48px 40px;
+    align-content: center;
+    gap: 30px;
 }
-/* .footer__frame{ 
-    width: 100%;
-    height: 250px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    opacity: 0.05;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) -41.9%, #FFF 260.24%);
-    backdrop-filter: blur(100px);
-} */
 .footer__box {
     display: flex;
     flex-direction: column;
@@ -260,4 +250,49 @@ margin-top: 50px;
 .box-content-logos {
     display: flex;
     gap: 24px;
+}
+/* Версия для ноутбука-планшета */
+@media screen and (max-width: 1439px) {
+    /* container для элементов */
+    .center {
+        max-width: 767px;
+    }
+    /* Первая секция */
+    .intro, .text-image, .text-image2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box__image {
+        margin-top: 64px;
+    } 
+    .intro-box{
+        max-width: 604px;
+    }
+    /* Логотипы */
+    .cards {
+        flex-wrap: wrap;
+        gap: 32px;
+        max-width: 553px;
+        justify-content: center;
+    }
+    /* Картинка с текстом */
+    .text-box {
+        max-width: 484px;
+    }
+    .text-image2__box {
+        max-width: 584px;
+    }
+    /* Таблица grid с сервисами */
+    .services {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        max-width: 362px;
+    }
+    .item-big {
+        display: none;
+    }
+    /* footer сайта */
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
