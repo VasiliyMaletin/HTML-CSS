@@ -10,17 +10,33 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="header__box center">
-            <div class="header__box-content">
+            <div class="header__box-left position">
                 <img src="./assets/images/header/logo.png" alt="">
-                <button class="header__box-button">
+                <button class="header__box-button position">
                     <img src="./assets/images/header/search.png" alt="">
                 </button>
             </div>
-            <div>
-                <button class="header__box-button">
-                    <img src="./assets/images/header/navigation.png" alt="">
+            <div class="header__box-right position">
+                <div class="header__box-content position">
+                    <button class="header__box-button position">
+                        <img src="./assets/images/header/menu.png" alt="">
+                    </button>
+                    <button class="header__box-button position">
+                        <img src="./assets/images/header/profile.png" alt="">
+                    </button>
+                </div>
+                <button class="header__box-button position">
+                    <div class="box-button__icon">
+                        <img src="./assets/images/header/cart.png" alt="">
+                        <span>
+                            <div class="box-button__content">
+                                <img src="./assets/images/header/ellipse.png" alt="">
+                                <span>5</span>
+                            </div>
+                        </span>
+                    </div>
                 </button>
             </div>
         </div>
@@ -28,7 +44,10 @@
     <section class="intro">
         <div class="intro__box center">
             <div class="intro__box-image">
-                <img src="./assets/images/intro/intro.png" alt="">
+                <picture>
+                    <source media="(max-width: 1439px)" srcset="./assets/images/intro/intro_tablet.png">
+                    <img src="./assets/images/intro/intro.png" alt="">
+                </picture>
             </div>
             <div class="intro__box-title">
                 <img class="intro__box-rectangle" src="./assets/images/intro/rectangle.png" alt="">
@@ -50,7 +69,10 @@
     </section>
     <section class="categories center">
         <div class="categories__box">
-            <img class="categories__box-image" src="./assets/images/categories/box_1.png" alt="">
+            <picture>
+                <source media="(max-width: 1439px)" srcset="./assets/images/categories/box_1_tablet.png">
+                <img class="categories__box-image" src="./assets/images/categories/box_1.png" alt="">
+            </picture>
             <div class="categories__box-text">
                 <div class="box-text__1">
                     30% OFF
@@ -61,7 +83,10 @@
             </div>
         </div>
         <div class="categories__box">
-            <img class="categories__box-image" src="./assets/images/categories/box_2.png" alt="">
+            <picture>
+                <source media="(max-width: 1439px)" srcset="./assets/images/categories/box_2_tablet.png">
+                <img class="categories__box-image" src="./assets/images/categories/box_2.png" alt="">
+            </picture>
             <div class="categories__box-text">
                 <div class="box-text__1">
                     HOT DEAL
@@ -72,7 +97,10 @@
             </div>
         </div>
         <div class="categories__box">
-            <img class="categories__box-image" src="./assets/images/categories/box_3.png" alt="">
+            <picture>
+                <source media="(max-width: 1439px)" srcset="./assets/images/categories/box_3_tablet.png">
+                <img class="categories__box-image" src="./assets/images/categories/box_3.png" alt="">
+            </picture>
             <div class="categories__box-text">
                 <div class="box-text__1">
                     NEW ARRIVALS
@@ -83,7 +111,10 @@
             </div>
         </div>       
         <div class="categories__box box-big">
-            <img class="categories__box-image" src="./assets/images/categories/box_4.png" alt="">
+            <picture>
+                <source media="(max-width: 1439px)" srcset="./assets/images/categories/box_4_tablet.png">
+                <img class="categories__box-image" src="./assets/images/categories/box_4.png" alt="">
+            </picture>
             <div class="categories__box-text text-big">
                 <div class="box-text__1">
                     LUXIROUS & TRENDY
