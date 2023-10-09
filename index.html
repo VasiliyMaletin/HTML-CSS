@@ -23,11 +23,11 @@
                     <button class="header__box-button position">
                         <img src="./assets/images/header/menu.png" alt="">
                     </button>
-                    <button class="header__box-button position">
+                    <button class="header__box-button position hidden-icons">
                         <img src="./assets/images/header/profile.png" alt="">
                     </button>
                 </div>
-                <button class="header__box-button position">
+                <button class="header__box-button position hidden-icons">
                     <div class="box-button__icon">
                         <img src="./assets/images/header/cart.png" alt="">
                         <span>
@@ -43,14 +43,17 @@
     </header>
     <section class="intro">
         <div class="intro__box center">
-            <div class="intro__box-image">
+            <div class="intro__box-image hidden-icons">
                 <picture>
                     <source media="(max-width: 1439px)" srcset="./assets/images/intro/intro_tablet.png">
                     <img src="./assets/images/intro/intro.png" alt="">
                 </picture>
             </div>
             <div class="intro__box-title">
-                <img class="intro__box-rectangle" src="./assets/images/intro/rectangle.png" alt="">
+                <picture class="intro__box-rectangle">
+                    <source media="(max-width: 767px)" srcset="./assets/images/intro/rectangle_mobile.png">
+                    <img src="./assets/images/intro/rectangle.png" alt="">
+                </picture>
                 <h1>
                     <p class="box-title__1">
                         THE BRAND
@@ -67,9 +70,10 @@
             </div>
         </div>
     </section>
-    <section class="categories center">
+    <section class="categories center-tablet">
         <div class="categories__box">
             <picture>
+                <source media="(max-width: 767px)" srcset="./assets/images/categories/box_1_mobile.png">
                 <source media="(max-width: 1439px)" srcset="./assets/images/categories/box_1_tablet.png">
                 <img class="categories__box-image" src="./assets/images/categories/box_1.png" alt="">
             </picture>
@@ -84,6 +88,7 @@
         </div>
         <div class="categories__box">
             <picture>
+                <source media="(max-width: 767px)" srcset="./assets/images/categories/box_2_mobile.png">
                 <source media="(max-width: 1439px)" srcset="./assets/images/categories/box_2_tablet.png">
                 <img class="categories__box-image" src="./assets/images/categories/box_2.png" alt="">
             </picture>
@@ -98,6 +103,7 @@
         </div>
         <div class="categories__box">
             <picture>
+                <source media="(max-width: 767px)" srcset="./assets/images/categories/box_3_mobile.png">
                 <source media="(max-width: 1439px)" srcset="./assets/images/categories/box_3_tablet.png">
                 <img class="categories__box-image" src="./assets/images/categories/box_3.png" alt="">
             </picture>
@@ -112,8 +118,9 @@
         </div>       
         <div class="categories__box box-big">
             <picture>
+                <source media="(max-width: 767px)" srcset="./assets/images/categories/box_4_mobile.png">
                 <source media="(max-width: 1439px)" srcset="./assets/images/categories/box_4_tablet.png">
-                <img class="categories__box-image" src="./assets/images/categories/box_4.png" alt="">
+                <img class="categories__box-image box-image-big" src="./assets/images/categories/box_4.png" alt="">
             </picture>
             <div class="categories__box-text text-big">
                 <div class="box-text__1">
