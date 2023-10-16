@@ -249,6 +249,62 @@ h1 {
     margin-bottom: 60px;
     cursor: pointer;
 }
+.advantages {
+    max-width: 100%;
+    height: 341px;
+    flex-shrink: 0;
+    background-color: #222224;
+    margin-top: 95px;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.advantages__box {
+    width: 360px;
+    height: 134px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-delivery {
+    margin-bottom: 28.07px;
+}
+.icon-sales {
+    margin-bottom: 19.07px;
+}
+.icon-quality {
+    margin-bottom: 25.06px;
+}
+.advantages__box-title {
+    color: #FBFBFB;
+    font-size: 19.96px;
+    font-weight: 400;
+    line-height: normal;
+}
+.advantages__box-description {
+    color: #FBFBFB;
+    text-align: center;
+    word-wrap:break-word;
+    font-size: 13.972px;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 16px;
+}
+.subscription {
+}
+.subscription__background {
+    min-width: 100%;
+    height: 448px;
+}
+.subscription__box {
+    position: relative;
+}
+@media (min-width: 1601px) {
+    .intro__box {
+        max-width: 1600px;
+    }
+}
 @media (min-width: 768px) and (max-width: 1439px) {
     .center-tablet, .center {
         max-width: 767px;
