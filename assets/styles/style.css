@@ -18,6 +18,12 @@
 }
 @font-face {
     font-family: "Lato";
+    src: url("../fonts/Lato-Italic.ttf");
+    font-style: italic; 
+    font-weight: 400; 
+}
+@font-face {
+    font-family: "Lato";
     src: url("../fonts/Lato-Light.ttf");
     font-style: normal; 
     font-weight: 300;
@@ -292,13 +298,44 @@ h1 {
     margin-top: 16px;
 }
 .subscription {
-}
-.subscription__background {
-    min-width: 100%;
+    background-image: url(../images/subscription/background.png);
+    background-size: cover;
+    background-position: center;
     height: 448px;
-}
+}   
 .subscription__box {
-    position: relative;
+    background: rgba(244, 244, 244, 0.7);
+    height: 448px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 223px;
+}
+.subscription__box-left {
+    width: 360px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.subscription__box-description {
+    width: 359.449px;
+    height: 99px;
+    color: #222224;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.subscription__box-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 40%;
+    left: 60%;
 }
 @media (min-width: 1601px) {
     .intro__box {
