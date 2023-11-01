@@ -217,6 +217,9 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+/* .box__image:hover {
+    background-color: rgba(58, 56, 56, 0.86);
+} */
 .popular__box-text {
     display: flex;
     flex-direction: column;
@@ -255,6 +258,11 @@ h1 {
     margin-top: 48px;
     margin-bottom: 60px;
     cursor: pointer;
+    transition: 0.3s;
+}
+.popular-position__button:hover {
+    background-color: #F16D7F;
+    color: #FFFFFF;
 }
 .advantages {
     max-width: 100%;
@@ -386,7 +394,13 @@ h1 {
     font-size: 14px;
     font-weight: 400;
     line-height: normal;
-    margin-left: -3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.box-right__input-button:hover {
+    background-color: #FFFFFF;
+    color: #F16D7F;
+    border: 1px solid #F16D7F;
 }
 .footer {
     max-width: 100%;
@@ -416,10 +430,19 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: #FFF;
+    transition: 0.3s;
+}
+.icon-box__svg path {
+    fill: black;
+    transition: 0.3s;
 }
 .footer__icon-box:hover {
     background-color: #F16D7F;
+
+    .icon-box__svg path {
+        fill: #FFF;
+    }
 }
 @media (min-width: 1601px) {
     .intro__box {
