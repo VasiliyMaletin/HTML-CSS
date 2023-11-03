@@ -188,6 +188,7 @@ h1 {
     height: 260px;
     flex-shrink: 0;
     background-color: rgba(33, 22, 22, 1);
+    cursor: pointer;
 }
 .box-big {
     width: 100%;
@@ -455,6 +456,7 @@ h1 {
     border: none;
     border-radius: 2rem 0 0 2rem;
     padding-left: 22px;
+    cursor: pointer;
 }
 .box-right__input-frame::placeholder {
     color: #222224;
